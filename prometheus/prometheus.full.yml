@@ -1,0 +1,23 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: langchain-agent
+    static_configs:
+      - targets: ["langchain-agent:8000"]
+
+  - job_name: devops-ai-assistant
+    static_configs:
+      - targets: ["devops-ai-assistant:8000"]
+
+  - job_name: multi-agent-devops
+    static_configs:
+      - targets: ["multi-agent-devops:8000"]
+
+  - job_name: langgraph-multiagent
+    static_configs:
+      - targets: ["langgraph-multiagent:8000"]
+
+  - job_name: llm-monitoring
+    static_configs:
+      - targets: ["llm-monitoring:8000"]
